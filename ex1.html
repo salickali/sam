@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<link rel="stylesheet" type="text/css" href="ex1.css">
+</head>
+
+
+<body>
+
+
+	<h1>Sample Input output</h1>
+
+
+<input id="n" type="number" name="na">
+<br>
+<input id="p" type="number" name="pass">
+
+<br>
+
+<button type="button" onclick="gett();">Submit</button>
+
+<p id="tot"></p>
+
+<a href="www.google.com">Google</a>
+
+
+<script type="text/javascript">
+
+	function gett(){
+
+
+//alert('hello');
+
+
+	var a = document.getElementById('n').value;
+
+	var b = document.getElementById('p').value;
+
+	var c = parseInt(a) + parseInt(b);
+
+	document.getElementById('tot').innerHTML = 	c;
+
+
+	// if(a === 'salick' && b ==='123'){
+	// 	alert("hey you r good to go");
+	// }
+	// else if(!a && !b){
+
+	// 	alert('no input given');
+	// }
+
+	// else{
+	// 	alert("wrong cred");
+	// }
+	
+	}
+	
+
+   
+</script>
+
+</body>
+
+
+</html>

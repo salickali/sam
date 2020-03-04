@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Average</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  
+
+</head>
+<body>
+
+    <div class="container">
+      <div class="row">
+          <div class="col-12">
+              <label for="name">Name</label>
+              <input type="name" id="name">
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-3">
+            <label for="m1">Ethics</label>
+            <input type="number" id="m1">
+        </div>
+
+        <div class="col-3">
+            <label for="m2">Math</label>
+            <input type="number" id="m2">
+        </div>
+        <div class="col-3">
+            <label for="m3">English</label>
+            <input type="number" id="m3">
+        </div>
+        <div class="col-3">
+            <label for="m4">Science</label>
+            <input type="number" id="m4">
+        </div>
+      </div>
+
+      <div class="row mb-3">
+          <div class="col-12">
+              <button  onclick="cal();">Calculate Average</button>
+          </div>
+      </div>
+
+
+      <div class="row mb-3">
+
+        <div class="col-12">
+            <p id="aver"></p>
+        </div>
+      </div>
+
+
+    </div>
+
+
+    <script>
+
+document.write("bismillah");
+
+
+       
+
+    
+        function cal(){
+
+            var student = new Object();
+        student.name = document.getElementById("name").value;
+        student.m1 = parseInt(document.getElementById("m1").value);
+        student.m2 = parseInt(document.getElementById('m2').value);
+        student.m3 = parseInt(document.getElementById('m3').value);
+        student.m4 = parseInt(document.getElementById('m4').value);
+        student.calavg  = function(){
+                
+             avg =  student.m1+student.m2+student.m3 + student.m4/4;
+                return (avg);
+                
+        }; 
+            // alert();
+           
+            //     var c = student.calavg();
+            //   alert(c);
+
+                document.getElementById('aver').innerHTML = student.calavg();
+
+
+
+
+            // }
+        }
+    </script>
+    
+</body>
+</html>

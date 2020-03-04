@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fucntions</title>
+</head>
+<body>
+
+
+	<h2>Enter the value</h2>
+
+	<input type="name" name="na" id="nn">
+
+	<button onclick="get()">Submit</button>
+
+	<input type="submit" value="click me" id="one">
+
+
+	<script type="text/javascript">
+		function get(){
+
+
+
+			var name = document.getElementById('nn').value;
+var count = 0;
+
+			if(name==''){
+				alert('empyt fiels');
+			}
+
+			for(var i=0; i<name.length;i++){
+
+			if(name[i] == 'a' || name[i] == 'i'){
+
+				count+=1;
+				
+			}
+
+		}
+
+		alert("hey vowel count is "+ count);
+		}
+
+
+		document.getElementById('one').onclick = function(){
+			alert('hey you clicked me');
+		}
+
+	</script>
+
+</body>
+</html>
